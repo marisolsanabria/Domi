@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.domiapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DomiApp">
+        <activity android:name=".activities.VisualizarPedidosEmpresaActivity"
+            android:label="domiApp"
+            android:theme="@style/Theme.DomiApp.NoActionBar" />
+
+        <service android:name=".services.myFirebaseMessagingClient">
+            <intent-filter>
+                <action android:name="com.gooogle.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activities.RequestDriverActivity" />
+        <activity android:name=".activities.RregisterCompanyActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCUVc7l4oTnZvapzqFZDnYrapqEQBv5TB8" />
+
+        <activity android:name=".activities.MainEmptyActivity" />
+        <activity
+            android:name=".activities.EmpresaActivity"
+            android:label="domiApp"
+            android:theme="@style/Theme.DomiApp.NoActionBar" />
+        <activity
+            android:name=".activities.DomiciliariosActivity"
+            android:label="domiApp"
+            android:theme="@style/Theme.DomiApp.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="domiapp"
+            android:theme="@style/Theme.DomiApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity android:name=".activities.SignInActivity" />
+        <activity android:name=".activities.LogInActivity" />
+
+    </application>
+
+</manifest>

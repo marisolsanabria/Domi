@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/domiciliarios_nav"
+    app:startDestination="@id/bnvCityD">
+
+    <fragment
+        android:id="@+id/bnvCityD"
+        android:name="com.example.domiapp.fragments.MapsDomiciliarioFragment"
+        android:label="fragment_city"
+        tools:layout="@layout/fragment_maps_domiciliario" />
+    <fragment
+        android:id="@+id/bnvDeliveriesD"
+        android:name="com.example.domiapp.fragments.deliveriesFragment"
+        android:label="fragment_deliveries"
+        tools:layout="@layout/fragment_deliveries" />
+    <fragment
+        android:id="@+id/bnvHelpD"
+        android:name="com.example.domiapp.fragments.helpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/bnvSettingsD"
+        android:name="com.example.domiapp.fragments.settingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/bnvSupportD"
+        android:name="com.example.domiapp.fragments.supportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+</navigation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/bnvMisDomiciliariosE"
+                android:title="Mis domiciliarios"
+                android:icon="@drawable/ic_baseline_touch_app_24"/>
+            <item
+                android:id="@+id/bnvDeliveriesE"
+                android:title="@string/deliveries"
+                android:icon="@drawable/delivery"/>
+
+            <item
+                android:id="@+id/bnvSettingsE"
+                android:title="@string/settings"
+                android:icon="@drawable/settings"/>
+
+            <item
+                android:id="@+id/bnvHelpE"
+                android:title="@string/help"
+                android:icon="@drawable/help"/>
+
+            <item
+                android:id="@+id/bnvSupportE"
+                android:title="@string/support"
+
+                android:icon="@drawable/support"/>
+        </group>
+
+    </menu>
+
+</menu>

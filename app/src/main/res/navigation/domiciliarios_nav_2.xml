@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/domiciliarios_nav_2"
+    app:startDestination="@id/mapsDomiciliarioFragment">
+
+    <fragment
+        android:id="@+id/mapsDomiciliarioFragment"
+        android:name="com.example.domiapp.fragments.MapsDomiciliarioFragment"
+        android:label="fragment_maps_domiciliario"
+        tools:layout="@layout/fragment_maps_domiciliario" >
+        <action
+            android:id="@+id/action_mapsDomiciliarioFragment_to_cityFragment"
+            app:destination="@id/bnvCity" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvCity"
+        android:name="com.example.domiapp.fragments.cityFragment"
+        android:label="fragment_city"
+        tools:layout="@layout/fragment_city" >
+        <action
+            android:id="@+id/action_cityFragment_to_deliveriesFragment2"
+            app:destination="@id/bnvDeliveries" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvDeliveries"
+        android:name="com.example.domiapp.fragments.deliveriesFragment"
+        android:label="fragment_deliveries"
+        tools:layout="@layout/fragment_deliveries" >
+        <action
+            android:id="@+id/action_deliveriesFragment_to_helpFragment"
+            app:destination="@id/bnvHelp" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvHelp"
+        android:name="com.example.domiapp.fragments.helpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_settingsFragment"
+            app:destination="@id/bnvSettings" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvSettings"
+        android:name="com.example.domiapp.fragments.settingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_supportFragment"
+            app:destination="@id/bnvSupport" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvSupport"
+        android:name="com.example.domiapp.fragments.supportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+</navigation>

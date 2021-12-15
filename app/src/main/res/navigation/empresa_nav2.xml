@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/empresa_nav2"
+    app:startDestination="@id/empresaHomeFragment">
+    <fragment
+        android:id="@+id/empresaHomeFragment"
+        android:name="com.example.domiapp.fragments.EmpresaHomeFragment"
+        android:label="fragment_empresa_home"
+        tools:layout="@layout/fragment_empresa_home" >
+        <action
+            android:id="@+id/action_empresaHomeFragment_to_bnvMisDomiciliariosE4"
+            app:destination="@id/bnvCity" />
+        <action
+            android:id="@+id/action_empresaHomeFragment_to_visualizacionDeSolicitudesEmpresaFragment"
+            app:destination="@id/visualizacionDeSolicitudesEmpresaFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/bnvCity"
+        android:name="com.example.domiapp.fragments.RegistrarDomiciliarioEmpresaFragment"
+        android:label="fragment_registrar_domiciliario_empresa"
+        tools:layout="@layout/fragment_registrar_domiciliario_empresa" >
+        <action
+            android:id="@+id/action_bnvMisDomiciliariosE_to_bnvDeliveriesE2"
+            app:destination="@id/bnvDeliveries" />
+        <action
+            android:id="@+id/action_bnvCity_to_registrarDomiciliarioDatosFragment2"
+            app:destination="@id/registrarDomiciliarioDatosFragment2" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/bnvDeliveries"
+        android:name="com.example.domiapp.fragments.DeliveriesEmpresaFragment"
+        android:label="fragment_deliveries_empresa"
+        tools:layout="@layout/fragment_deliveries_empresa" >
+        <action
+            android:id="@+id/action_bnvDeliveriesE_to_bnvHelpE"
+            app:destination="@id/bnvHelp" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvHelp"
+        android:name="com.example.domiapp.fragments.helpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_bnvHelpE_to_bnvSettingsE"
+            app:destination="@id/bnvSettingsE" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvSettings"
+        android:name="com.example.domiapp.fragments.settingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_bnvSettingsE_to_bnvSupportE"
+            app:destination="@id/bnvSupport" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvSupport"
+        android:name="com.example.domiapp.fragments.supportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/visualizacionDeSolicitudesEmpresaFragment"
+        android:name="com.example.domiapp.fragments.VisualizacionDeSolicitudesEmpresaFragment"
+        android:label="fragment_visualizacion_de_solicitudes_empresa"
+        tools:layout="@layout/fragment_visualizacion_de_solicitudes_empresa" />
+    <fragment
+        android:id="@+id/registrarDomiciliarioDatosFragment2"
+        android:name="com.example.domiapp.fragments.RegistrarDomiciliarioDatosFragment2"
+        android:label="fragment_registrar_domiciliario_datos2"
+        tools:layout="@layout/fragment_registrar_domiciliario_datos2" />
+
+</navigation>

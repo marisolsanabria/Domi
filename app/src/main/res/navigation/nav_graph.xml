@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bnvCity">
+
+    <fragment
+        android:id="@+id/bnvCity"
+        android:name="com.example.domiapp.fragments.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsfragment_to_bnvDeliveries"
+            app:destination="@id/bnvDeliveries" />
+        <action
+            android:id="@+id/action_bnvCity_to_detailsRequestJavaFragment"
+            app:destination="@id/detailsRequestJavaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvDeliveries"
+        android:name="com.example.domiapp.fragments.deliveriesFragment"
+        android:label="fragment_deliveries"
+        tools:layout="@layout/fragment_deliveries" >
+        <action
+            android:id="@+id/action_deliveriesFragment_to_settingsFragment"
+            app:destination="@id/bnvHelp" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvHelp"
+        android:name="com.example.domiapp.fragments.helpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_supportFragment"
+            app:destination="@id/bnvSettings" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvSettings"
+        android:name="com.example.domiapp.fragments.settingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_helpFragment"
+            app:destination="@id/bnvSupport" />
+    </fragment>
+    <fragment
+        android:id="@+id/bnvSupport"
+        android:name="com.example.domiapp.fragments.supportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/detailsRequestJavaFragment"
+        android:name="com.example.domiapp.fragments.DetailsRequestJavaFragment"
+        android:label="DetailsRequestJavaFragment" />
+</navigation>

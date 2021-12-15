@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/domiColor"
+    android:alpha="50"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/ivProfilePictureSideMenu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profilepic"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/calification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="calificación"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/profileType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de perfil"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dp"/>
+
+
+
+</LinearLayout>

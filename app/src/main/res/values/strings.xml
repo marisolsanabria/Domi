@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">DomiApp</string>
+    <string name="city">Mapa</string>
+    <string name="deliveries">Mis Domicilios</string>
+    <string name="settings">Ajustes</string>
+    <string name="help">Ayuda</string>
+    <string name="support">Soporte</string>
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
+    <string name="partida">Recoger en</string>
+    <string name="Destino">Destino</string>
+    <string name="Comentario">Comenta con mas detalle lo que necesitas</string>
+    <string name="solicitar_domicilio">Pedir domicilio</string>
+    <string name="cambiarPerfil"> campiar perfil</string>
+    <string name="permission_require">Location permission</string>
+    <string name="conectDriver">CONECTARME</string>
+    <string name="disconectDriver">DESCONECTARME</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="listaPerfiles">
+        <item>usuario</item>
+        <item>domiciliario</item>
+        <item>empresa</item>
+    </string-array>
+    <string name="title_activity_maind_r_a_w_e">MaindRAWEActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+</resources>

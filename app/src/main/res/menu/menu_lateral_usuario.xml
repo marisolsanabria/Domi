@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools= "http://schemas.android.com/tools"
+    tools:showIn= "navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bnvCity"
+            android:title="@string/city"
+            android:icon="@drawable/ic_baseline_location_city_24"/>
+        <item
+            android:id="@+id/bnvDeliveries"
+            android:title="@string/deliveries"
+            android:icon="@drawable/delivery"/>
+
+        <item
+            android:id="@+id/bnvSettings"
+            android:title="@string/settings"
+            android:icon="@drawable/settings"/>
+
+        <item
+            android:id="@+id/bnvHelp"
+            android:title="@string/help"
+            android:icon="@drawable/help"/>
+
+        <item
+            android:id="@+id/bnvSupport"
+            android:title="@string/support"
+            android:icon="@drawable/support"/>
+
+
+    </group>
+
+
+
+
+
+
+</menu>

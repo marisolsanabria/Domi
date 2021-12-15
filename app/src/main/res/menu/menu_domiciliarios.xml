@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/bnvCityD"
+                android:title="@string/city"
+                android:icon="@drawable/ic_baseline_location_city_24"/>
+            <item
+                android:id="@+id/bnvDeliveriesD"
+                android:title="@string/deliveries"
+                android:icon="@drawable/delivery"/>
+
+            <item
+                android:id="@+id/bnvSettingsD"
+                android:title="@string/settings"
+                android:icon="@drawable/settings"/>
+
+            <item
+                android:id="@+id/bnvHelpD"
+                android:title="@string/help"
+                android:icon="@drawable/help"/>
+
+            <item
+                android:id="@+id/bnvSupportD"
+                android:title="@string/support"
+                android:icon="@drawable/support"/>
+        </group>
+
+    <item android:title="Cuenta">
+        <menu>
+
+            <item
+                android:id="@+id/cambiarPerfilD"
+                android:title="Cambiar de perfil" />
+            <item
+                android:id="@+id/bnvCerrarSesionD"
+                android:title="cerrar sesión" />
+
+
+        </menu>
+    </item>
+
+
+
+
+    </menu>
