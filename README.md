@@ -9,6 +9,6 @@ Domi is an app for delivery services, it's being developed in kotlin and jave, u
 
 ## Objectives
 
--Create a login and signup that works with a gmail account or an email with password that is going to ber verified by email /n
--Make the different roles and the logic to put the different views between the delivery people and the clients
--Create a view where the users can se the route, the start and end point, the distance and time, using google maps
+- Create a login and signup that works with a gmail account or an email with password that is going to ber verified by email.
+- Make the different roles and the logic to put the different views between the delivery people and the clients.
+- Create a view where the users can se the route, the start and end point, the distance and time, using google maps.
